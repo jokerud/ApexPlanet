@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApexPlanet - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Apex<span>Planet</span></div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to <span>ApexPlanet</span></h1>
+        <p>
+          Your one-stop solution for all your needs. Explore our services and
+          products tailored just for you.
+        </p>
+        <button>Get Started</button>
+      </div>
+      <div class="hero-img">
+        <img src="apexplanet.png" alt="Placeholder Image" />
+      </div>
+    </section>
+
+    <section class="carousel-section fade-in">
+      <h2>Explore Our Highlights</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn left">&#10094;</button>
+        <div class="carousel-track">
+          <div class="carousel-card">
+            <img src="img1.webp" alt="Highlight 1" />
+            <p>INTERNSHIP</p>
+          </div>
+          <div class="carousel-card">
+            <img src="img2.jpg" alt="Highlight 2" />
+            <p>REQUEST DEMO</p>
+          </div>
+          <div class="carousel-card">
+            <img src="apexplanet.png" alt="Highlight 3" />
+            <p>APEXPLANET SOFTWARE PVT LTD | GAYA</p>
+          </div>
+          <div class="carousel-card">
+            <img src="pricing0.svg" />
+            <p>NO CHARGES</p>
+          </div>
+        </div>
+        <button class="carousel-btn right">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>What We Offer</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>
+            Build fast, responsive, and interactive websites with our expert
+            team.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Design Services</h3>
+          <p>
+            Creative and user-friendly UI/UX designs tailored for your brand.
+          </p>
+        </div>
+        <div class="card">
+          <h3>SEO & Marketing</h3>
+          <p>
+            Grow your reach with optimized strategies for search engines and
+            social media.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="jokeSection" style="text-align:center; padding: 40px;">
+      <h2>😂 Random Joke</h2>
+      <div id="jokeBox" style="
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-size: 1.2rem;
+      ">
+        Loading a joke...
+      </div>
+      <button onclick="getJoke()" style="
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #00796b;
+        color: white;
+        cursor: pointer;
+      ">
+        Get Another Joke
+      </button>
+    </section>
+    
+
+    <footer class="footer">
+      <p>&copy; 2025 <strong>ApexPlanet</strong>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

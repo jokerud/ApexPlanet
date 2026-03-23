@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Contact Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ApexPlanet</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-layout">
+    <section class="box box1">
+      <h2>About Me</h2>
+      <p>I am an enthusiastic full-stack web developer with a focus on the MERN stack. I enjoy bringing ideas to life through code and currently working on projects like a Zerodha clone, interactive forms, and responsive layouts to sharpen my frontend and JavaScript skills. Alongside web development, I am also preparing for GATE 2026, demonstrating my commitment to mastering computer science fundamentals. I am a self-driven learner who thrives on building, experimenting, and continuously improving.</p>
+    </section>
+
+    <section class="box box2">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>JavaScript</li>
+        <li>React, Node.js</li>
+        <li>MongoDB</li>
+      </ul>
+    </section>
+
+    <section class="box box3">
+      <h2>Zerodha Clone</h2>
+      <p>Zerodha clone project is a full-stack web application inspired by the Zerodha platform, which focuses on providing stock market trading services. The project aims to offer a user-friendly interface for buying, selling, and tracking stocks, along with other core functionalities like account management and market analysis.</p>
+      <a href="https://github.com/dhirajkumar91/zerodha-clone">View Project</a>
+    </section>
+
+    <section class="box box4">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dhiraj Kumar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

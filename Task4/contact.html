@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="contact-header">
+    <h1>Contact Me</h1>
+  </header>
+
+  <section class="contact-container" data-aos="fade-up">
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" name="name" required>
+      <input type="email" placeholder="Your Email" name="email" required>
+      <textarea placeholder="Your Message" name="message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <h3>Connect with me</h3>
+      <a href="https://github.com/dhirajkumar91" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/dhirajkumar91" target="_blank">LinkedIn</a>
+      <a href="drai6186@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Dhiraj Kumar. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
